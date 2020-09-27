@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono',
+        monospace;
+    background-color: #f1f2f6;
+    letter-spacing: 2px;
+
+}
+
+/* TITLE */
+.heading {
+    padding: 20px;
+    max-width: 1600px;
+    margin: 20px auto;
+}
+
+h1 {
+    opacity: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+h1.second {
+    margin-top: 50px;
+}
+
+h1.last {
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+/* MAIN CONTENT */
+.content {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    width: 100%;
+    max-width: 1600px;
+    margin: 50px auto;
+    align-items: center;
+}
+
+.content div {
+    text-align: center;
+    width: 25%;
+    background-color: #dcdde1;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 3%;
+    opacity: 0;
+}
+
+.content div h2 {
+    font-size: 20px;
+}
+
+.blue h2 {
+    color: #0984e3;
+}
+
+.yellow h2 {
+    color: #f6b93b;
+}
+
+.green h2 {
+    color: #27ae60;
+}
+
+.purple h2 {
+    color: #6c5ce7;
+}
+
+.content div p {
+    padding-top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .4s;
+
+}
+
+@media(min-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    h1.second {
+        margin-top: 60px;
+    }
+
+    h1.last {
+        margin-top: 60px;
+        font-size: 28px;
+    }
+
+    .content div {
+        margin: 15px;
+    }
+
+    .content div h2 {
+        font-size: 30px;
+    }
+
+    .content div p {
+        padding-top: 10px;
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content {
+        flex-direction: row;
+    }
+
+    .blue p:hover {
+        color: #0984e3;
+    }
+
+    .yellow p:hover {
+        color: #f6b93b;
+    }
+
+    .green p:hover {
+        color: #27ae60;
+    }
+
+    .purple p:hover {
+        color: #6c5ce7;
+    }
+}
+
+/* ANIMATION */
+@keyframes showh1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: showh1 0.2s linear both;
+}
+
+h1.second {
+    animation-delay: 0.2s;
+}
+
+h1.last {
+    animation-delay: 0.4s;
+}
+
+.content div {
+    animation: showh1 0.2s linear both;
+}
+
+div.blue {
+    animation-delay: 0.4s;
+}
+
+div.yellow {
+    animation-delay: 0.6s;
+}
+
+div.green {
+    animation-delay: 0.8s;
+}
+
+div.purple {
+    animation-delay: 1s;
+}
+
+
+/* janek */
