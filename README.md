@@ -1,2 +1,2 @@
 # homepage
- home page template
+ responsive home page template
